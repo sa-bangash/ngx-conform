@@ -21,7 +21,6 @@ export class ConformManagerService {
       const factory: ComponentFactory<ConformComponent> = this.resolver.resolveComponentFactory(ConformComponent);
       this.componentRef = this._rootViewContainerRef.createComponent(factory);
       this.componentRef.instance.status.subscribe((value) => {
-        console.log("inside manager");
         this.sendStatus.next(value);
         cb(value);
         this._rootViewContainerRef.clear();

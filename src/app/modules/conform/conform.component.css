@@ -1,0 +1,60 @@
+.wrapper{
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dialog{
+background: #fff;
+width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 5px;
+}
+
+.dialog .dialog-title{
+	font-size: 30px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 10px;
+	padding-left:10px;
+	padding-top: 10px;
+}
+.dialog-message{
+	padding: 10px;
+	flex:2;
+}
+.dialog-controls{
+	display:flex;
+	justify-content: flex-end;
+	padding:10px;
+}
+.cbtn{
+	margin: 3px;
+	font-size: 15px;
+	padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.btn-confirm{
+    
+		background-color: #f1433f;
+		color:#fff;
+}
+.btn-confirm:active{
+	background-color: buttonface;
+	color:#000;
+}
